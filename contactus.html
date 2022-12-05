@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="contact-us">
+<div class="jumbotron text-center">
+    <h1>Navigation area</h1>
+    <p>Resize this responsive page to see the effect!</p>
+</div>
+<div class="container">
+    <div class="row">
+    <h2 class="col-md-4">Application Form</h2>
+    <div class="col-md-3"></div>
+    <h2 class="col-md-4">Contact Us</h2>
+    </div>
+    <form onsubmit="return check()">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                <label for="fullname">FullName:</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                <label for="phone">PhoneNumber:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="description">Descriptions:</label>
+                    <textarea class="form-control input-lg" id="description"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script>
+function check(){
+    var name = document.getElementById("fullname").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    if(name==""){
+        alert("name shouldn't be null");
+        return false;
+    }else{
+        if(phone==""){
+            alert("phone number shouldn't be null");
+            return false;
+        } else{
+        if(email==""){
+            alert("email shouldn't be null");
+            return false;
+        }
+    }
+}
+}
+</script>
+</html>
