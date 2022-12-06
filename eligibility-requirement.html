@@ -6,6 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <title>KometCare</title>
+        <style>
+          @keyframes fadeIn {
+            from {
+              transform: translateY(10px);
+              opacity: 0;
+            }
+            to {
+              transform: none;
+              opacity: 1;
+            }
+          }
+
+          .main-page {
+            margin: 20px 0px;
+            animation: fadeIn 0.8s linear;;
+          }
+        </style>
     </head>
     <body id="requirement">  <!--Body tag has been replaced with div so as to avoid two body tag use in the other pages -->
          <nav class="hm-nav">
