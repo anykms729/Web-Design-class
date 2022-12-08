@@ -36,5 +36,22 @@ function writeText() {
 }
 
 /*Auto heading ends*/ 
+/** Nav Bar in mobile device */
+function hmopennav() {
+    var x = document.querySelector(".hm-nav");
+    var y = document.querySelector(".hm-container");
+    if (x.className === "hm-nav") {
+      x.className += " active";
+    } else {
+      x.className = "hm-nav";
+    }
+    if (y.className === "hm-container") {
+        y.className += " active";
+    } else {
+        y.className = "hm-container";
+    }
+    
+  }
+/** Nav Bar in mobile device ens*/
 
 //Emre's Code ends
