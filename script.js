@@ -39,18 +39,11 @@ function writeText() {
 /** Nav Bar in mobile device */
 function hmopennav() {
     var x = document.querySelector(".hm-nav");
-    var y = document.querySelector(".hm-container");
     if (x.className === "hm-nav") {
-      x.className += " active";
+      x.className += " media";
     } else {
       x.className = "hm-nav";
     }
-    if (y.className === "hm-container") {
-        y.className += " active";
-    } else {
-        y.className = "hm-container";
-    }
-    
   }
 /** Nav Bar in mobile device ens*/
 
