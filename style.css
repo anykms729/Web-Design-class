@@ -315,3 +315,156 @@ button .circle {
 }
  
 /*-----------------------------------------------------------------------Miso CSS ends---------------------------------------------------------------------------------*/
+
+
+#eligibility-requirement {
+  overflow: scroll;
+  background-image: url('img/bg-eligibility.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+#eligibility-requirement .main-page {
+  margin: 30px 0px;
+  animation: fadeIn 0.8s linear;
+  color: whitesmoke;
+  background-color:rgba(0, 0, 0, 0.4);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  margin-top: 20px;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#eligibility-requirement .main-page-text {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#eligibility-requirement .main-page-text .main-page__h2 {
+  margin: 10px 0px 20px 0px;
+  width: 20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid whitesmoke;
+  animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+  0%, 100% { 
+    border-color: whitesmoke; 
+  }
+}
+
+@keyframes text {
+  0% { 
+    width: 0; 
+  }
+  100% { 
+    width: 20ch; 
+    color: tomato;
+  }
+}
+
+#eligibility-requirement .main-page-text .main-page__p {
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+}
+
+#eligibility-requirement .main-page-text .main-page__p b {
+  color: tomato;
+}
+
+#eligibility-requirement .link-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#eligibility-requirement .link-btn{
+  margin-top: 5px;
+  background:tomato;
+  color:whitesmoke;
+  border:none;
+  position:relative;
+  height:50px;
+  width: 300px;
+  font-size:20px;
+  padding:0 5px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+#eligibility-requirement .link-btn:hover{
+  background:whitesmoke;
+  color:tomato;
+  font-weight: bolder;
+}
+#eligibility-requirement .link-btn:before,
+#eligibility-requirement .link-btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: tomato;
+  transition:500ms ease all;
+}
+#eligibility-requirement .link-btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#eligibility-requirement .link-btn:hover:before,
+#eligibility-requirement .link-btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+@media screen and (max-width: 920px) {
+  #eligibility-requirement .main-page-text .main-page__p {
+    font-size: 14px;
+  }
+
+  #eligibility-requirement .main-page-text .main-page__h2 {
+    font-size: 20px;
+  }
+
+  #eligibility-requirement .link-btn{
+    width: 100px;
+    font-size: 14px;
+  }
+
+}
+
+/*-----------------------------------------------------------------------Jinnie CSS ends---------------------------------------------------------------------------------*/
