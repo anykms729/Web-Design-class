@@ -375,7 +375,7 @@
   }
 }
 
-#eligibility-requirement .main-page {
+#eligibility-requirement .main-box {
   margin: 30px 0px;
   animation: fadeIn 0.8s linear;
   color: whitesmoke;
@@ -391,14 +391,14 @@
   border-radius: 5px;
 }
 
-#eligibility-requirement .main-page-text {
+#eligibility-requirement .main-box-text {
   width: 85%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
 
-#eligibility-requirement .main-page-text .main-page__h2 {
+#eligibility-requirement .main-box-text .main-box__h2 {
   margin: 10px 0px 20px 0px;
   width: 20ch;
   white-space: nowrap;
@@ -424,13 +424,13 @@
   }
 }
 
-#eligibility-requirement .main-page-text .main-page__p {
+#eligibility-requirement .main-box-text .main-box__p {
   font-size: 20px;
   text-align: left;
   line-height: 150%;
 }
 
-#eligibility-requirement .main-page-text .main-page__p b {
+#eligibility-requirement .main-box-text .main-box__p b {
   color: tomato;
 }
 
@@ -451,6 +451,7 @@
   padding:0 5px;
   cursor:pointer;
   transition:800ms ease all;
+  animation: fadeIn 0.8s linear;
   outline:none;
 }
 #eligibility-requirement .link-btn:hover{
@@ -481,12 +482,56 @@
   transition:800ms ease all;
 }
 
+#employment {
+  overflow: scroll;
+  background-image: url('img/bg-employment.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+#employment .main-box {
+  margin: 30px 0px;
+  animation: fadeIn 0.8s linear;
+  color: whitesmoke;
+  background-color:rgba(0, 0, 0, 0.4);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  margin-top: 20px;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 920px) {
-  #eligibility-requirement .main-page-text .main-page__p {
+  #eligibility-requirement .main-box-text .main-box__p {
     font-size: 14px;
   }
 
-  #eligibility-requirement .main-page-text .main-page__h2 {
+  #eligibility-requirement .main-box-text .main-box__h2 {
     font-size: 20px;
   }
 
