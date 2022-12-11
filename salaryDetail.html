@@ -1,130 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salary Detail</title>
+  <title>Salary Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="img/logo.JPG">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Navbar icon -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap-iso.css" />
+  <!-- Navbar icon -->
+  <link rel="stylesheet" href="style.css">
 
   <style>
-   main {
-  display: flex;
-}
+    @keyframes fadeIn {
+      from {
+        transform: translateY(10px);
+        opacity: 0;
+      }
 
-.container {
-  background:black;
-  border-radius: 5px;
-  margin: 0 10px 20px;
-  padding: 1%;
-  width: 50%;
-  color:white;
-  font-size:2vw;
-  text-align: center;
-}
+      to {
+        transform: none;
+        opacity: 1;
+      }
+    }
 
-.top {
-  background: white;
-  border-radius: 3px;
-  margin: 5%;
-  height: 20%;
-}
+    .main-page {
+      margin: 20px 0px;
+      animation: fadeIn 0.8s linear;
+      ;
+    }
 
-.middle {
-  background: #42f5a7;
-  border-radius: 3px;
-  margin: 5%;
-  height: 60%;
-  display: inline-block;
-}
- 
-</style>
-  <link rel="stylesheet" href="style.css" /> <!--Main Css-->
+    body {
+      overflow: scroll;
+    }
+  </style>
+
 </head>
-    <div class="hm-body">  <!--Body tag has been replaced with div so as to avoid to use nav bar in the other pages -->
-        <nav class="hm-nav">
-           <div class="hm-container">
-               <h1 class="hm-logo"><a class="hm-a" href="index.html">KometCare</a></h1>
-               <ul class="hm-ul">
-                   <li><a href="index.html" class="hm-a">Home</a></li> <!--(EmresPage) -->
-                   <li><a href="aboutus.html" class="hm-a">About</a></li>  <!--(IrenesPAge)-->
-                   <li><a href="eligibility-requirement.html" class="hm-a">Eligibility Requirement</a></li> <!--(JinniesPage)-->
-                   <li><a href="VisaRequirements.html" class="hm-a">VISA Requirement</a></li> <!-- (EmresPage)-->
-                   <li><a href="generalInfo.html" class="hm-a">General Information</a></li> <!--(MisosPage)-->
-                   <li><a href="employment.html" class="hm-a">Employment</a></li> <!--(JinniesPage)-->
-                   <li><a href="salaryDetail.html" class="hm-a current">Salary Details</a></li> <!--(MisosPage)current class is used to higlight the content it will change in every page -->
-                   <li><a href="contactus.html" class="hm-a">Contact</a></li> <!--(IrenesPage)-->
-                    <li><a href="javascript:void(0);" class="hm-icon" onclick="hmopennav()">
-                        <i class="fa fa-bars"></i>
-                      </a>
-               </ul>
-           </div>
-       </nav> 
+
+<body class="salary-body">
+  <div class="bootstrap-iso">
+    <div class="hm-body">
+      <!--Body tag has been replaced with div so as to avoid to use nav bar in the other pages -->
+      <nav class="hm-nav">
+        <div class="hm-container">
+          <h1 class="hm-logo"><a class="hm-a" href="index.html">KometCare</a></h1>
+          <ul class="hm-ul">
+            <li><a href="index.html" class="hm-a">Home</a></li> <!--(EmresPage) -->
+            <li><a href="aboutus.html" class="hm-a">About</a></li> <!--(IrenesPAge)-->
+            <li><a href="eligibility-requirement.html" class="hm-a">Eligibility Requirement</a></li>
+            <!--(JinniesPage)-->
+            <li><a href="VisaRequirements.html" class="hm-a">VISA Requirement</a></li>
+            <!-- (EmresPage)current class is used to higlight the content it will change in every page -->
+            <li><a href="generalInfo.html" class="hm-a">General Information</a></li> <!--(MisosPage)-->
+            <li><a href="employment.html" class="hm-a">Employment</a></li> <!--(JinniesPage)-->
+            <li><a href="salaryDetail.html" class="hm-a">Salary Details</a></li> <!--(MisosPage)-->
+            <li><a href="index.html" class="hm-a">Contact</a></li> <!--(IrenesPage)-->
+            <li><a href="javascript:void(0);" class="hm-icon" onclick="hmopennav()">
+                <i class="fa fa-bars"></i>
+              </a>
+          </ul>
+        </div>
+      </nav>
     </div>
+  </div>
 
-<body>
-  <!-- refer format:
-    1) https://www.codewithrandom.com/2022/03/25/rock-paper-scissors-game-javascript-rock-paper-scissors-game-html-css/
-  -->
-  <header>
-    <h1>"Get paid for the value you bring to the work"</h1>
-  </header>
-
-    <main>
+  <section class="gi-cards-section">
     <div class="container">
-       <i class="material-icons">attach_money</i>
-      <div class="top">Image 2</div>
-      <div class="middle">Total annual salary amount
+      <div class="row">
+
+        <div class="col-sm-2 card-wrapper">
+          <div class="card card-style">
+            <img class="card-image" src="./sl-image4.jpg" alt="KometCare image">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title"> Hourly & weekly Salary rates
+              </h3>
+              <p class="card-text"> Find more detail about National Minimum salary rate enforced by Irish Government from below
+              </p>
+              <a href="https://www.gov.ie/en/publication/1786c-national-minimum-wage-increase-1-january/#:~:text=The%20national%20minimum%20hourly%20rate,11.30%20on%201%20January%202023." class="btn btn-dark stretched-link salary mt-auto" target="_blank" style="font-size: smaller;  ">Official Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 card-wrapper">
+          <div class="card card-style">
+            <img class="card-image" src="./sl-image6.jpg" alt="KometCare image">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">                 Total annual salary</h3>
+              <p class="card-text"> Consult 24/7 our professional Reps, access to our dedicated service from below</p>
+              <a href="contactus.html" class="btn btn-dark stretched-link salary mt-auto" target="_blank">Contact us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 card-wrapper">
+          <div class="card card-style">
+            <img class="card-image" src="./sl-image5.jpg" alt="KometCare image">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Weekly working hours</h3>
+              <p class="card-text">Hours might differ according to personal visa situation. Check detail from below </p>
+              <a href="VisaRequirements.html" class="btn btn-dark stretched-link salary mt-auto" target="_blank">Visa Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 card-wrapper">
+          <div class="card card-style">
+            <img class="card-image" src="./sl-image9.jpg" alt="KometCare image">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title"> Deduction Types & Detail
+              </h3>
+              <p class="card-text">Find more detail about deduction from below Irish official Employment website</p>
+              <a href="https://www.citizensinformation.ie/en/employment/employment_rights_and_conditions/pay_and_employment/pay_slip.html" class="btn btn-dark stretched-link salary mt-auto" target="_blank"  style="font-size: smaller;">Official Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 card-wrapper">
+          <div class="card card-style">
+            <img class="card-image" src="./sl-image8.jpg" alt="KometCare image">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Deduction taken
+              </h3>
+              <p class="card-text">Make Sure whether deduction is taken for health insurance or not, contact our Reps for further inquiry</p>
+              <a href="contactus.html" class="btn btn-dark stretched-link salary mt-auto" target="_blank">Contact us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 card-wrapper">
+          <div class="card card-style">
+            <img class="card-image" src="./sl-image10.jpg" alt="KometCare image">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title"> Salary
+              </h3>
+              <p class="card-text"> Find detailed definition of Salary from below</p>
+              <a href="generalInfo.html" class="btn btn-dark stretched-link salary mt-auto" target="_blank">General Info</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+  </section>
 
-    <div class="container">
-      <i class="material-icons">attach_money</i>
-      <div class="top">Image 2</div>
-      <div class="middle">Hourly and weekly salary rate</div>
-     </div>
-
-    <div class="container">
-      <i class="material-icons">attach_money</i>
-      <div class="top">Image 3</div>
-      <div class="middle">Weekly work hours
-        &#10004;Condition 1<br>
-        &#10004;Condition 2<br>
-        &#10004;Condition 3<br>
-      </div> 
-    </div>
-
-    <div class="container">
-      <i class="material-icons">attach_money</i>
-      <div class="top">Image 4</div>
-      <div class="middle">Details any deductions from salary and what deductions are for
-        &#10004;Condition 1<br>
-        &#10004;Condition 2<br>
-        &#10004;Condition 3<br>
-      </div> 
-      </div>
-    
-    <div class="container">
-      <i class="material-icons">attach_money</i>
-      <div class="top">Image 5</div>
-      <div class="middle">Confirm if deductions are taken for health insurance</div>
-    </div>
-
-    <div class="container">
-      <i class="material-icons">attach_money</i>
-      <div class="top">Image 6</div>
-      <div class="middle">Annual remuneration figures indicated above are based on a 39-hour working week. In respect of a 40-hour week the salary would have to be adjusted accordingly. Salary refers solely to basic pay. Salary shall not include any bonuses, shift allowances, overtime etc</div>
-    </div>
-  </main>
-
-  <footer>
-
-  </footer>
-  
 </body>
-  <script src="script.js"></script> <!--MainJavaScriptLink-->
+
+
+<script src="script.js"></script> <!--JavaScriptforNavBar-->
+
 </html>
