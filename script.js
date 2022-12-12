@@ -2,7 +2,7 @@
 //05/12/2022
 /*Nav bar*/
 const nav = document.querySelector('.hm-nav')
-window.addEventListener('scroll', fixNav)
+window.addEventListener('scroll', fixNav) 
 
 function fixNav() {
     if(window.scrollY > nav.offsetHeight + 150) {
