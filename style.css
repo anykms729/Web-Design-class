@@ -543,21 +543,6 @@
   margin-top: 50px;
 }
 
-#employment .main-box {
-  margin: 10px 0px;
-  animation: fadeIn 0.8s linear;
-  color: whitesmoke;
-  background-color:rgba(0, 0, 0, 0.4);
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  width: 60%;
-  height: 60%;
-  overflow: auto;
-  padding: 20px;
-  border-radius: 5px;
-}
-
 @keyframes orderAnimation {
   0% {
     transform: none;
@@ -687,6 +672,11 @@
   right: 10px;
 }
 
+.slide_prev_button:hover,
+.slide_next_button:hover {
+  background-color: tomato;
+}
+
 /* 페이지네이션 스타일 */
 ul,
 li {
@@ -707,14 +697,14 @@ li {
   transform: translateX(-50%);
 }
 .slide_pagination > li {
-  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
-  color: #7fb5ff88;
+  /* color of other text box */
+  color: lightpink;
   cursor: pointer;
   font-size: 25px;
 }
 .slide_pagination > li.active {
-  /* 현재 슬라이드 색상은 투명도 없이 */
-  color: #7fb5ff;
+  /* color of current textbox */
+  color: tomato;
 }
 
 @media screen and (max-width: 920px) {
