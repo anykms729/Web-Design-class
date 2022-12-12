@@ -496,7 +496,7 @@
   outline:none;
 }
 #eligibility-requirement .link-btn:hover{
-  background:whitesmoke;
+  background:rgba(0, 0, 0, 0.4);
   color:tomato;
   font-weight: bolder;
 }
@@ -823,8 +823,8 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
 #about-us .about-item:hover i{
     transform: translateY(-20px);
 }
-#about-us.about-item:hover i,
-#about-us. about-item:hover h3,
+#about-us .about-item:hover i,
+#about-us .about-item:hover h3,
 #about-us .about-item:hover hr{
     transition: all 400ms ease-in-out;
 }
