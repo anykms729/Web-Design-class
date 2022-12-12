@@ -54,7 +54,7 @@ const panels = document.querySelectorAll('.hm-panel') /*we can choose all clases
 console.log(panels)
 
 panels.forEach(panel => {
-    panel.addEventListener('click', () =>{
+    panel.addEventListener('mouseover', () =>{
         removeActiveClasses()
         panel.classList.add('active')
     })
