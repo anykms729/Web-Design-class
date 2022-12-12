@@ -281,7 +281,6 @@
     width: 500px;
     margin: 10px;
     border: 3px;
-    background-color: #000;
     z-index: 4;
 }
 
@@ -296,7 +295,6 @@
 }
 
 .visa-column{
-    background-image: url(/img/graffiti-on-the-wall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
