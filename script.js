@@ -11,7 +11,7 @@ function fixNav() {
         nav.classList.remove('active')
     }
 }
-/*Nav bar ens*/
+/*Nav bar ends*/
 
 /*Auto heading
 06/12/2022*/ 

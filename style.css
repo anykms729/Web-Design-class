@@ -149,8 +149,9 @@
  
  .hm-pcontainer {
     display: flex;
-    width: 90vw;
+    width: 100vw;
     background-color: #AFEEEE;
+    opacity: 0.9;
  }
  .hm-panel{
     background-size: auto 100%;
@@ -159,14 +160,14 @@
     height: 80vh;
     border-radius: 50px;
     cursor: pointer; /*cursor will be pointing when hovering over*/
-    flex: 0.5;
+    flex: 0.6;
     margin: 10px; /*seperating them to each other*/
     position: relative; /**/
     transform: flex 0.7 ease-in;
 }
 
 .hm-panel.active {
-    flex: 5;
+    flex: 4;
 }
 
 @media (max-width: 920px) {
