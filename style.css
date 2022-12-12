@@ -14,36 +14,36 @@
  }
  
  .hm-body {
-     font-family: 'Mada', sans-serif;
+     font-family: 'Mada', sans-serif !important;
      color: #222;
-     padding-bottom: 50px;
+     padding-bottom: 50px !important;
  }
  
  .hm-container {
-     max-width: 1200px;
-     margin: 0 auto;
+     max-width: 1200px !important;
+     margin: 0 auto !important;
  }
  
  .hm-nav {
-     position: fixed;
+     position: fixed !important;
      background-color: #222;
-     top: 0;
-     left: 0;
-     right: 0;
+     top: 0 !important;
+     left: 0 !important;
+     right: 0 !important;
      transition: all 0.3s ease-in-out;
  }
  
  .hm-nav .hm-container {
-     display: flex;
-     justify-content: space-between; /*to give space for each item*/
-     align-items: center;
+     display: flex ;
+     justify-content: space-between !important; /*to give space for each item*/
+     align-items: center !important;
      padding: 20px 0 !important; /*avoid boostrap apply*/
-     transition: all 0.3s ease-in-out; /*when scrolling it will give nice ease transation effect*/
+     transition: all 0.3s ease-in-out !important; /*when scrolling it will give nice ease transation effect*/
  }
  
  .hm-nav .hm-ul {
      display: flex;
-     list-style-type: none;
+     list-style-type: none !important;
      align-items: center !important;
      justify-content: center !important;
  }
@@ -65,7 +65,7 @@
  }
  
  .hm-nav.active .hm-container { /*when it's not displaying padding will be smaller*/
-     padding: 10px 0;
+     padding: 10px 0 !important;
  }
  
  .hm-nav a.current, 
@@ -147,12 +147,45 @@
      margin: -20px 0 20px;
  }
  
+ .hm-container {
+    display: flex;
+    width: 90vw;
+ }
+ .hm-panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer; /*cursor will be pointing when hovering over*/
+    flex: 0.5;
+    margin: 10px; /*seperating them to each other*/
+    position: relative; /**/
+    transform: flex 0.7 ease-in;
+}
+
+.hm-panel.active {
+    flex: 5;
+}
+
+@media (max-width: 920px) {
+    .hm-container{
+        width: 100vw;
+    }
+
+    .hm-panel:nth-of-type(4),
+    .hm-panel:nth-of-type(5){
+        display: none; /*when the screen small it wont display 4th nd 5th*/
+        transition: all 0.3 ease-in-out;
+    }
+}
+
  .hm-hero .hm-p {
      font-size: 20px;
      letter-spacing: 1px;
  }
  
- .main-content .hm-h2,
+.main-content .hm-h2,
  .main-content .hm-h3 {
      font-size: 150%;
      margin: 20px 0;
@@ -188,7 +221,10 @@
     font-family: 'Mada', sans-serif;
     display: absolute;
     background-color: rgba(230, 220, 220, 0.3) !important;
-    
+ }
+
+ ul.list-group {
+    list-style-type: square !important;
  }
 
  .bootstrap-iso .list-group{
@@ -218,6 +254,7 @@
     overflow: hidden !important;
     margin: 10px 15px !important;
     position: flex !important;
+    border-radius: 25px !important;
 }
 
 .visa-button:focus {
@@ -227,6 +264,10 @@
 .visa-button:hover {
     background-color: #fff !important;
     color: #000 !important;
+    transition: 0.3 ease-in-out !important;
+    /* color: #000 !important; */
+    /*opacity: 0.5 !important;*/
+    
 }
 
 
@@ -252,19 +293,16 @@
     }
 }
 
-.visa-column1{
+.visa-column{
     background-image: url(/img/graffiti-on-the-wall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.4;
+    background-position: center;
+    opacity: 0.5;
+    width: 100vh;
+    filter: blur(0px);
 }
 
-.visa-column3{
-    background-image: url(/img/graffiti-on-the-wall.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.4;
-}
 
  /*-----------------------------------------------------------------------Emre CSS ends---------------------------------------------------------------------------------*/
 

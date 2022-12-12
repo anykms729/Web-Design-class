@@ -47,6 +47,26 @@ function hmopennav() {
   }
 /** Nav Bar in mobile device ends*/
 
+/*Pictures in the home page*/
 
+const panels = document.querySelectorAll('.hm-panel') /*we can choose all clases named panel*/ 
+
+console.log(panels)
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () =>{
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+
+    })
+}
+
+/*Pictures in the home page ends*/
 
 //Emre's Code ends
