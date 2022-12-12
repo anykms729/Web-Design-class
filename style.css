@@ -387,7 +387,6 @@
 
 
 #eligibility-requirement {
-  overflow: scroll;
   background-image: url('img/bg-eligibility.jpg');
   height: 100vh;
   background-repeat: no-repeat;
@@ -524,7 +523,6 @@
 }
 
 #employment {
-  overflow: scroll;
   background-image: url('img/bg-employment.jpg');
   height: 100vh;
   background-repeat: no-repeat;
@@ -590,18 +588,7 @@
   height: 80%;
 }
 
-@keyframes fadeIn {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-.slide_item {
+.main-box {
   /* layout */
   display: flex;
   flex-direction: column;
@@ -627,7 +614,7 @@
   background-color:rgba(0, 0, 0, 0.4);
 }
 
-.slide_item {
+.main-box {
   animation: fadeIn 0.8s linear;
   color: whitesmoke;
   background-color:rgba(0, 0, 0, 0.4);
@@ -641,37 +628,34 @@
 }
 
 .slide_button {
-  /* layout */
+  /* set its layout */
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* position */
+  /* set its position */
   position: absolute;
-  /* 버튼이 중앙에 위치하게 하기위해 계산 */
   top: calc(80% - 16px);
 
-  /* size */
-  width: 32px;
-  height: 32px;
+  /* set its size */
+  width: 35px;
+  height: 35px;
 
   /* style */
   border-radius: 100%;
-  background-color: #cccc;
+  background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
+/* set position of each button(margin) */
 .slide_prev_button {
-  position: absolute;
-  bottom: 0;
-  left: 10px;
+  left: 15px;
 }
 .slide_next_button {
-  position: absolute;
-  bottom: 0;
-  right: 10px;
+  right: 15px;
 }
 
+/* set hover effect(color change) */
 .slide_prev_button:hover,
 .slide_next_button:hover {
   background-color: tomato;
