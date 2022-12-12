@@ -560,19 +560,18 @@
   font-size: 32px;
 }
 
-.main-box-text .main-box__h2 {
+#employment .main-box-text .main-box__h2 {
   margin: 10px 0px 20px 0px;
   font-size: 24px;
 }
 
-.main-box-text .main-box__p {
+#employment .main-box-text .main-box__p {
   margin: 10px 0px 20px 0px;
   font-size: 18px;
   text-align: lefts;
 }
 
-
-.slide {
+#employment .slide {
   /* layout */
   display: flex;
   flex-wrap: nowrap;
@@ -588,13 +587,12 @@
   height: 80%;
 }
 
-.main-box {
+#employment .main-box {
   /* layout */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  direction: c;
 
   /* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
   position: relative;
@@ -612,22 +610,14 @@
   animation: fadeIn 0.8s linear;
   color: whitesmoke;
   background-color:rgba(0, 0, 0, 0.4);
-}
-
-.main-box {
-  animation: fadeIn 0.8s linear;
-  color: whitesmoke;
-  background-color:rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  border-radius: 5px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 100%;
-  height: 70%;
-  overflow: auto;
-  border-radius: 5px;
 }
 
-.slide_button {
+#employment .slide_button {
   /* set its layout */
   display: flex;
   justify-content: center;
@@ -648,27 +638,27 @@
 }
 
 /* set position of each button(margin) */
-.slide_prev_button {
+#employment .slide_prev_button {
   left: 15px;
 }
-.slide_next_button {
+#employment .slide_next_button {
   right: 15px;
 }
 
 /* set hover effect(color change) */
-.slide_prev_button:hover,
-.slide_next_button:hover {
+#employment .slide_prev_button:hover,
+#employment .slide_next_button:hover {
   background-color: tomato;
 }
 
 /* 페이지네이션 스타일 */
-ul,
-li {
+#employment ul,
+#employment li {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.slide_pagination {
+#employment .slide_pagination {
   /* layout */
   display: flex;
   gap: 5px;
@@ -680,18 +670,23 @@ li {
   left: 50%;
   transform: translateX(-50%);
 }
-.slide_pagination > li {
+#employment .slide_pagination > li {
   /* color of other text box */
   color: lightpink;
   cursor: pointer;
   font-size: 25px;
 }
-.slide_pagination > li.active {
+#employment .slide_pagination > li.active {
   /* color of current textbox */
   color: tomato;
 }
 
 @media screen and (max-width: 920px) {
+  #eligibility-requirement .main-box {
+    height: 70%;
+    margin-top: 60px;
+  }
+
   #eligibility-requirement .main-box-text .main-box__p {
     font-size: 14px;
   }
@@ -705,7 +700,7 @@ li {
     font-size: 14px;
   }
 
-  .slide-content .main-box__p{  
+  #employment .slide-content .main-box__p{  
     font-size: 12px;
   }
 
@@ -713,13 +708,18 @@ li {
   font-size: 24px;
   }
 
-  .main-box-text .main-box__h2 {
+  #employment .main-box-text .main-box__h2 {
     font-size: 18px;
   }
 
-  .main-box-text .main-box__p {
+  #employment .main-box-text .main-box__p {
     font-size: 14px;
   }
+
+  #employment .slide_pagination {
+    visibility: hidden;
+  }
+
 }
 
 /*-----------------------------------------------------------------------Jinnie CSS ends---------------------------------------------------------------------------------*/
