@@ -385,14 +385,17 @@
  
 /*-----------------------------------------------------------------------Miso CSS ends---------------------------------------------------------------------------------*/
 
+/* CSS Style of Eligibility Requirement Page */
 
+/* Set background and element of body */
 #eligibility-requirement {
+  /* Set background of eligibility-requirement page */
   background-image: url('img/bg-eligibility.jpg');
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  color: whitesmoke;
+  /* Set position and display of eligibility-requirement page */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -400,107 +403,150 @@
   text-align: center;
   position: relative;
   margin-bottom: 20px;
+  /* Set font color of eligibility-requirement page */
+  color: whitesmoke;
 }
 
+/* Create fadeIn effect for eligibility-requirement page and employment page */
 @keyframes fadeIn {
   from {
+    /* Set position(initial location) */
     transform: translateY(10px);
+    /* Set opacity(invisible) */
     opacity: 0;
   }
   to {
+    /* Move contents into original location  */
     transform: none;
+    /* Set opacity(visible) */
     opacity: 1;
   }
 }
 
+/* Set background and element of text box */
 #eligibility-requirement .main-box {
-  margin: 30px 0px;
-  animation: fadeIn 0.8s linear;
-  color: whitesmoke;
+  /* Set background and border-radius of text box */
   background-color:rgba(0, 0, 0, 0.4);
   border-radius: 20px;
+  /* Set position and size of text box */
+  margin: 30px 0px;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
   width: 80%;
   height: 60%;
-  margin-top: 20px;
-  overflow: auto;
   padding: 20px;
-  border-radius: 5px;
+  /* Set position of text inside text box */
+  text-align: center;
+  /* Set overflow(Scroll bar) as auto for mobile screen size */
+  overflow: auto;
+  /* Apply fadeIn effect to main-box once */
+  animation: fadeIn 0.8s linear;
 }
 
+/* Set size and position of text */
 #eligibility-requirement .main-box-text,
 #employment .main-box-text {
   width: 85%;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
 }
 
-#eligibility-requirement .main-box-text .main-box__h2 {
-  margin: 10px 0px 20px 0px;
-  width: 20ch;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid whitesmoke;
-  animation: cursor 1s step-start infinite, 
-    text 5s steps(18) alternate infinite;
-}
-
+/* Create cursor effect for main box title */
 @keyframes cursor {
   0%, 100% { 
+    /* Set border-color(cursor) */
     border-color: whitesmoke; 
   }
 }
 
 @keyframes text {
   0% { 
+    /* Set width of text area(invisible) */
     width: 0; 
   }
   100% { 
+    /* Set width of text area(visible) */
     width: 20ch; 
+    /* Set font color of text area */
     color: tomato;
   }
 }
 
+/* Set size and position of title */
+#eligibility-requirement .main-box-text .main-box__h2 {
+  /* Set position and size of title */
+  margin: 10px 0px 20px 0px;
+  width: 20ch;
+  /* Prevent line-break */
+  display: inline-block;
+  white-space: nowrap;
+  /* Prevent overflow(Scroll bar) */
+  overflow: hidden;
+  /* Set right side border of title(for animation effect) */
+  border-right: 3px solid whitesmoke;
+  /* Apply cursor effect to title infinitely */
+  animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+/* Set font size and alignment of contents */
 #eligibility-requirement .main-box-text .main-box__p {
+  /* Set font size of contents */
   font-size: 20px;
+  /* Set text alignment of contents */
   text-align: left;
+  /* Set spacing of contents */
   line-height: 150%;
 }
 
+/* Set font color of bold */
 #eligibility-requirement .main-box-text .main-box__p b {
+  /* Set its font color as tomato */
   color: tomato;
 }
 
+/* Remove decoration of link */
 #eligibility-requirement .link-btn a {
+  /* Remove underline */
   text-decoration: none;
+  /* Remove color */
   color: inherit;
 }
 
+/* Set position and size of link button */
 #eligibility-requirement .link-btn{
+  /* Set background, size and display of link button */
   margin-top: 5px;
   background:tomato;
-  color:whitesmoke;
   border:none;
   position:relative;
   height:50px;
   width: 300px;
-  font-size:20px;
   padding:0 5px;
-  cursor:pointer;
-  transition:800ms ease all;
-  animation: fadeIn 0.8s linear;
   outline:none;
+  /* Set font color, font size of link button */
+  color:whitesmoke;
+  font-size:20px;
+  /* Set cursor of link button */
+  cursor:pointer;
+  /* Set transition for effect */
+  transition:800ms ease all;
+  /* Apply fadeIn effect to main-box once */
+  animation: fadeIn 0.8s linear;
 }
+
+/* Set hover effect of link button */
 #eligibility-requirement .link-btn:hover{
+  /* Set backgruond color and fontstyle of link button */
   background:rgba(0, 0, 0, 0.4);
   color:tomato;
   font-weight: bolder;
 }
+
+/* Set before and after of lint button */
 #eligibility-requirement .link-btn:before,
 #eligibility-requirement .link-btn:after{
+  /* Set background color and position of lint button */
   content:'';
   position:absolute;
   top:0;
@@ -508,136 +554,162 @@
   height:2px;
   width:0;
   background: tomato;
+  /* Set transition for effect */
   transition:500ms ease all;
 }
+
+/* Set before and after of lint button */
 #eligibility-requirement .link-btn:after{
+  /* Set position for effect */
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
+
+/* Set before and after of lint button(hover) */
 #eligibility-requirement .link-btn:hover:before,
 #eligibility-requirement .link-btn:hover:after{
+  /* Set width for effect */
   width:100%;
+  /* Set transition for effect */
   transition:800ms ease all;
 }
 
+/* CSS Style of Employment Page */
+
+/* Set background and element of body */
 #employment {
+  /* Set background of employment page */
   background-image: url('img/bg-employment.jpg');
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  color: whitesmoke;
+  /* Set position and display of employment page */
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
   margin-bottom: 20px;
+  /* Set font color or employment page */
+  color: whitesmoke;
 }
 
+/* Set upperside margin of slide box */
 #employment .slide_wrap {
+  /* Set upperside margin as 50px considering nav-bar */
   margin-top: 50px;
 }
 
-@keyframes orderAnimation {
-  0% {
-    transform: none;
-  }
-  50% {
-    transform: translateY(-5px) rotateY(360deg);
-    color: tomato;
-  }
-  100% {
-    transform: none;
-  }
-}
-
-#employment .main-box__order {
-  animation: orderAnimation 1.5s infinite;
-  color: whitesmoke;
-  font-size: 32px;
-}
-
-#employment .main-box-text .main-box__h2 {
-  margin: 10px 0px 20px 0px;
-  font-size: 24px;
-}
-
-#employment .main-box-text .main-box__p {
-  margin: 10px 0px 20px 0px;
-  font-size: 18px;
-  text-align: lefts;
-}
-
+/* Set position and size of slide */
 #employment .slide {
-  /* layout */
+  /* Set layout of slide */
   display: flex;
+  /* Prevent line-break */
   flex-wrap: nowrap;
-  /* 컨테이너의 내용물이 컨테이너 크기(width, height)를 넘어설 때 보이지 않도록 하기 위해 hidden을 준다. */
+  /* Hide overflow(Scroll bar) */
   overflow: hidden;
-
-  /* position */
-  /* slide_button의 position absolute가 컨테이너 안쪽에서 top, left, right offset이 적용될 수 있도록 relative를 준다. (기본값이 static인데, static인 경우 그 상위 컨테이너로 나가면서 현재 코드에선 html을 기준으로 offset을 적용시키기 때문) */
+  /* Set its position as relative for absolute positon of slide button */
   position: relative;
 
-  /* size */
+  /* Set size of slide */
   width: 100%;
   height: 80%;
 }
 
+/* Set position and size of slide box */
 #employment .main-box {
-  /* layout */
+  /* Set position and size of slide box */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  /* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
-  position: relative;
-  left: 0px;
-
-  /* size */
-  width: 100%;
-  height: 70%;
-  /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
-  flex-shrink: 0;
-
-  /* transition */
-  transition: left 0.15s;
-
-  animation: fadeIn 0.8s linear;
-  color: whitesmoke;
-  background-color:rgba(0, 0, 0, 0.4);
-  overflow: auto;
   border-radius: 5px;
   margin-right: auto;
   margin-left: auto;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  height: 70%;
+  /* Set its left position as zero for left offset value application */
+  left: 0px;
+  /* Fix the size of slide box */
+  flex-shrink: 0;
+  /* Set transition for effect */
+  transition: left 0.15s;
+  /* Set background color of slide box */
+  background-color:rgba(0, 0, 0, 0.4);
+  /* Set its overflow(Scroll bar) as auto for mobile size screen */
+  overflow: auto;
+  /* Apply fadeIn effect to slide box once */
+  animation: fadeIn 0.8s linear;
+}
+
+/* Create movement-rotation effect for slide box number */
+@keyframes orderAnimation {
+  0% {
+    /* Set its location as original location */
+    transform: none;
+  }
+  50% {
+    /* Set movement and rotation effect of text  */
+    transform: translateY(-5px) rotateY(360deg);
+    /* Set font-color of text */
+    color: tomato;
+  }
+  100% {
+    /* Set its location as original location */
+    transform: none;
+  }
+}
+
+/* Set font style and animation of slide box number */
+#employment .main-box__order {
+  /* Set font color, font size of slide box number */
+  color: whitesmoke;
+  font-size: 32px;
+  /* Set upperside margin of slide box number */
+  margin-top: 30px;
+  /* Apply orderAnimation effect to slide box number infinitely */
+  animation: orderAnimation 1.5s infinite;
+}
+
+/* Set position and font size of slide box title */
+#employment .main-box-text .main-box__h2 {
+  /* Set margin of title */
+  margin: 10px 0px 20px 0px;
+  /* Set font size of title */
+  font-size: 24px;
+  /* Set alignment of title */
   text-align: center;
 }
 
+/* Set position and font style of slide box contents */
+#employment .main-box-text .main-box__p {
+  /* Set margin of contents */
+  margin: 10px 0px 20px 0px;
+  /* Set font style of contents */
+  font-size: 18px;
+}
+
 #employment .slide_button {
-  /* set its layout */
+  /* Set layout and size of slide button */
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* set its position */
+  width: 35px;
+  height: 35px;
+  /* Set position of slide button(bottom side) */
   position: absolute;
   top: calc(80% - 16px);
 
-  /* set its size */
-  width: 35px;
-  height: 35px;
-
-  /* style */
-  border-radius: 100%;
+  /* Set background color of slide button */
   background-color: rgba(0, 0, 0, 0.4);
+  /* Set cursor style of slide button */
   cursor: pointer;
 }
 
-/* set position of each button(margin) */
+/* set fixed position of each button(margin) */
 #employment .slide_prev_button {
   left: 15px;
 }
@@ -651,24 +723,22 @@
   background-color: tomato;
 }
 
-/* 페이지네이션 스타일 */
+/* Reset style of pagination item */
 #employment ul,
 #employment li {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+/* Set position and layout of pagination */
 #employment .slide_pagination {
-  /* layout */
+  /* Set position and layout of pagination */
   display: flex;
-  gap: 5px;
-
-  /* position */
   position: absolute;
-  bottom: 0;
-  /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+  bottom: 2%;
   left: 50%;
-  transform: translateX(-50%);
+  /* Set gap amoung pagination */
+  gap: 7px;
 }
 #employment .slide_pagination > li {
   /* color of other text box */
@@ -681,42 +751,47 @@
   color: tomato;
 }
 
+/* Apply media query for responsive website */
 @media screen and (max-width: 920px) {
   #eligibility-requirement .main-box {
+    /* Increase height and margin-top considering main-box width and nav-bar width */
     height: 70%;
     margin-top: 60px;
   }
 
   #eligibility-requirement .main-box-text .main-box__p {
+    /* Decrease font size of contents */
     font-size: 14px;
   }
 
   #eligibility-requirement .main-box-text .main-box__h2 {
+    /* Decrease font size of title */
     font-size: 20px;
   }
 
   #eligibility-requirement .link-btn{
+    /* Decrease size and font size of button */
     width: 100px;
     font-size: 14px;
   }
 
-  #employment .slide-content .main-box__p{  
-    font-size: 12px;
-  }
-
   #employment .main-box__order {
-  font-size: 24px;
+    /* Decrease font size of slide number */
+    font-size: 24px;
   }
 
   #employment .main-box-text .main-box__h2 {
+    /* Decrease font size of title */
     font-size: 18px;
   }
 
   #employment .main-box-text .main-box__p {
+    /* Decrease font size of contents */
     font-size: 14px;
   }
 
   #employment .slide_pagination {
+    /* Hide pagination on the mobile size screen */
     visibility: hidden;
   }
 
