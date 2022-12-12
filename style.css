@@ -575,17 +575,17 @@
 #employment .main-box__order {
   animation: orderAnimation 1.5s infinite;
   color: whitesmoke;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .main-box-text .main-box__h2 {
   margin: 10px 0px 20px 0px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .main-box-text .main-box__p {
   margin: 10px 0px 20px 0px;
-  font-size: 14px;
+  font-size: 18px;
   text-align: lefts;
 }
 
@@ -665,7 +665,7 @@
   /* position */
   position: absolute;
   /* 버튼이 중앙에 위치하게 하기위해 계산 */
-  top: calc(50% - 16px);
+  top: calc(80% - 16px);
 
   /* size */
   width: 32px;
@@ -734,6 +734,18 @@ li {
 
   .slide-content .main-box__p{  
     font-size: 12px;
+  }
+
+  #employment .main-box__order {
+  font-size: 24px;
+  }
+
+  .main-box-text .main-box__h2 {
+    font-size: 18px;
+  }
+
+  .main-box-text .main-box__p {
+    font-size: 14px;
   }
 }
 
