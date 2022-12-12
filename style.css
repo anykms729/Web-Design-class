@@ -147,9 +147,10 @@
      margin: -20px 0 20px;
  }
  
- .hm-container {
+ .hm-pcontainer {
     display: flex;
     width: 90vw;
+    background-color: #AFEEEE;
  }
  .hm-panel{
     background-size: auto 100%;
