@@ -700,11 +700,12 @@
   /* Set position of slide button(bottom side) */
   position: absolute;
   top: calc(80% - 16px);
-
   /* Set background color of slide button */
   background-color: rgba(0, 0, 0, 0.4);
   /* Set cursor style of slide button */
   cursor: pointer;
+  /* Make its shape as circle */
+  border-radius: 100%;
 }
 
 /* set fixed position of each button(margin) */
