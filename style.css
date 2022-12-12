@@ -402,7 +402,6 @@
   align-items: center;
   text-align: center;
   position: relative;
-  margin-bottom: 20px;
   /* Set font color of eligibility-requirement page */
   color: whitesmoke;
 }
@@ -591,7 +590,6 @@
   align-items: center;
   text-align: center;
   position: relative;
-  margin-bottom: 20px;
   /* Set font color or employment page */
   color: whitesmoke;
 }
