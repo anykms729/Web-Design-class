@@ -354,7 +354,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  color: #fff;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,6 +380,7 @@
   animation: fadeIn 0.8s linear;
   color: whitesmoke;
   background-color:rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -391,7 +392,8 @@
   border-radius: 5px;
 }
 
-#eligibility-requirement .main-box-text {
+#eligibility-requirement .main-box-text,
+#employment .main-box-text {
   width: 85%;
   margin-right: auto;
   margin-left: auto;
@@ -489,25 +491,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  color: #fff;
+  color: whitesmoke;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
   margin-bottom: 20px;
-}
-
-@keyframes fadeIn {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
 }
 
 #employment .main-box {
@@ -518,12 +508,93 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 80%;
+  width: 60%;
   height: 60%;
-  margin-top: 20px;
   overflow: auto;
   padding: 20px;
   border-radius: 5px;
+}
+
+@keyframes orderAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+    color: tomato;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+#employment .main-box__order {
+  animation: orderAnimation 1.5s infinite;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+#employment .main-box-text .main-box__h2 {
+  margin: 10px 0px 20px 0px;
+  font-size: 18px;
+}
+
+#employment .clearfix:after { 
+  content: ''; 
+  display: block; 
+  clear: both; 
+  float: none; 
+}
+/* container - body */
+#container { 
+  width: 1000px; 
+  margin: auto; 
+}
+.slide-wrap { 
+  position: relative; 
+  width: 800px; 
+  margin: auto; 
+  padding-bottom: 30px; 
+}
+.slide-box { 
+  width: 100%;
+  margin: auto; 
+  overflow-x: hidden; 
+}
+.slide-content { 
+  display: table; 
+  float: left; 
+  width: 800px; 
+  height: 60%; 
+  margin-bottom: 100px;
+}
+
+.slide-pagination { 
+  position: absolute; 
+  left: 50%; 
+  bottom: 0; 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  transform: translateX(-50%); 
+}
+.slide-pagination .dot { 
+  display: inline-block; 
+  width: 15px; 
+  height: 15px; 
+  margin: 0 5px; 
+  overflow: hidden; 
+  background: #ddd; 
+  border-radius: 50%; 
+  transition: 0.3s; 
+}
+.slide-pagination .dot.dot_active { 
+  background: #333; 
+}
+.slide-pagination .dot a { 
+  display: block; 
+  width: 100%; 
+  height: 100%; 
 }
 
 @media screen and (max-width: 920px) {
@@ -540,6 +611,9 @@
     font-size: 14px;
   }
 
+  .slide-content {  
+    width: 400px; 
+  }
 }
 
 /*-----------------------------------------------------------------------Jinnie CSS ends---------------------------------------------------------------------------------*/
