@@ -921,7 +921,7 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: rgb(217, 255, 0);
+    color: black;
     /* flex-direction: column; */
     font-weight: 500;
 }
@@ -929,7 +929,7 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color:dimgrey;
     /* flex-direction: column; */
     font-weight: 300;
 }
