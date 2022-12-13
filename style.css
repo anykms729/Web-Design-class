@@ -798,15 +798,15 @@
 
 /*-----------------------------------------------------------------------Jinnie CSS ends---------------------------------------------------------------------------------*/
 #about-us{
-    background-image: url("img/sl-image8.jpg");
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(img/sl-image8.jpg);
     background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
 
 }
 /*===========================
