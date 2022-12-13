@@ -886,6 +886,17 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
 #about-us .about-item:hover hr{
     transition: all 400ms ease-in-out;
 }
+#contact-us{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(img/contact-us.jpg);
+    background-size: cover;
+}
 #contact-us .container .contactInfo{
     width: 50%;
     display: flex;
