@@ -905,6 +905,16 @@ hover means when you put your cursor over it
     background: url(img/contact-us.jpg);
     background-size: cover;
 }
+#contact-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
 
 /*===========================
  adding style to the paragraph
@@ -951,7 +961,7 @@ hover means when you put your cursor over it
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: black;
+    color: white;
     /* flex-direction: column; */
     font-weight: 500;
 }
@@ -960,7 +970,7 @@ hover means when you put your cursor over it
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: dimgrey;
+    color: white;
     /* flex-direction: column; */
     font-weight: 300;
 }
