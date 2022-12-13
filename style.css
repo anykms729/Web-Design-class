@@ -824,7 +824,7 @@
     color: #fff;
 }
 
-#about-us .about-item{
+#about-us .about-part{
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: white;
@@ -834,24 +834,17 @@
 
 /*======================================
 adding style to the icons(book,globe,pencil)
-=========================================*/
-#about-us .about-item i{
-    font-size: 43px;
-    margin: 0;
-}
 
-/*======================================
 adding style to h3(heading 3) of each item
 =========================================*/
-#about-us .about-item h3{
+#about-us .about-part h3{
     font-size: 25px;
     margin-bottom: 10px;
 }
-
 /*======================================
-styling the hr (the blue line in between)
+styling the hr (the darkgrey line in between)
 =========================================*/
-#about-us .about-item hr{
+#about-us .about-part hr{
     width: 46px;
     height: 3px;
     background-color: darkgrey;
@@ -863,29 +856,27 @@ styling the hr (the blue line in between)
 /*========================================
 hover means when you put your cursor over it
 =========================================*/
-#about-us .about-item:hover{
+#about-us .about-part:hover{
     background-color: #C0C0C0 ;
 }
-#about-us .about-item:hover i,
-#about-us .about-item:hover h3,
-#about-us .about-item:hover p{
+#about-us .about-part:hover h3,
+#about-us .about-part:hover p{
     color: #fff;
 }
-#about-us .about-item:hover hr{
+#about-us .about-part:hover hr{
     background-color: #fff;
 }
+
+
+#about-us .about-part:hover h3,
+#about-us .about-part:hover hr{
+    transition: all 400ms ease-in-out;
+}
+
 
 /*==============================================================================
 translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by
 ================================================================================*/
-#about-us .about-item:hover i{
-    transform: translateY(-20px);
-}
-#about-us .about-item:hover i,
-#about-us .about-item:hover h3,
-#about-us .about-item:hover hr{
-    transition: all 400ms ease-in-out;
-}
 #contact-us{
     position: relative;
     min-height: 100vh;
