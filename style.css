@@ -826,6 +826,9 @@
 }
 
 /*-----------------------------------------------------------------------Jinnie CSS ends---------------------------------------------------------------------------------*/
+/*===============================
+adding style to the about us page
+================================*/
 #about-us {
     position: relative;
     min-height: 100vh;
@@ -990,7 +993,6 @@ hover means when you put your cursor over it
     margin-left: 20px;
     font-size: 16px;
     color: white;
-    /* flex-direction: column; */
     font-weight: 500;
 }
 
@@ -999,7 +1001,6 @@ hover means when you put your cursor over it
     margin-left: 20px;
     font-size: 16px;
     color: white;
-    /* flex-direction: column; */
     font-weight: 300;
 }
 /*-----------------------------------------------------------------------Irene CSS ends---------------------------------------------------------------------------------*/
