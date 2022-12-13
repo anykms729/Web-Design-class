@@ -810,7 +810,7 @@
 
 }
 /*===========================
- adding style to about items
+ adding style to the paragraph
 ============================*/
 
 #about-us .about-para h2{
@@ -823,7 +823,9 @@
     padding: 3px;
     color: #fff;
 }
-
+/*===========================
+ adding style to three boxes
+============================*/
 #about-us .about-part{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -833,8 +835,6 @@
 }
 
 /*======================================
-adding style to the icons(book,globe,pencil)
-
 adding style to h3(heading 3) of each item
 =========================================*/
 #about-us .about-part h3{
@@ -852,7 +852,6 @@ styling the hr (the darkgrey line in between)
     border: none;
     text-align: center;
 }
-
 /*========================================
 hover means when you put your cursor over it
 =========================================*/
@@ -866,17 +865,13 @@ hover means when you put your cursor over it
 #about-us .about-part:hover hr{
     background-color: #fff;
 }
-
-
 #about-us .about-part:hover h3,
 #about-us .about-part:hover hr{
     transition: all 400ms ease-in-out;
 }
-
-
-/*==============================================================================
-translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by
-================================================================================*/
+/*==================================
+ adding style to contact us page
+===================================*/
 #contact-us{
     position: relative;
     min-height: 100vh;
@@ -888,6 +883,9 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
     background: url(img/contact-us.jpg);
     background-size: cover;
 }
+/*===========================
+ adding style to the paragraph
+============================*/
 #contact-us .contact-para h2{
     text-align: center;
     color: black;
@@ -898,6 +896,9 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
     padding: 3px;
     color: #fff;
 }
+/*===================================
+ adding style to the contactInfo part
+====================================*/
 #contact-us .container .contactInfo{
     width: 50%;
     display: flex;
@@ -934,3 +935,4 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
     /* flex-direction: column; */
     font-weight: 300;
 }
+/*-----------------------------------------------------------------------Irene CSS ends---------------------------------------------------------------------------------*/
