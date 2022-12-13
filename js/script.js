@@ -16,25 +16,32 @@ function fixNav() {
 /*Auto heading
 06/12/2022*/ 
 const homeh1 = document.querySelector('.hm-h1') //Calling the class from html
-const heading = 'Welcome to KometCare .. .'
+const visah1 = document.querySelector('.visa-h1') //Calling the visa h1 tag
+const heading = 'Welcome to KometCare .. .' 
+const headingg = 'Visa Requirement.  .'
 let idx = 1 
 let speed = 175 // rewrite speed
 
 writeText()
+writeText2()
 
 function writeText() {
     homeh1.innerText = heading.slice(0, idx)
-
     idx++
-
     if(idx > heading.length) { //condition to check if function exceeds the indecx number
         idx = 1
     }
-
     setTimeout(writeText, speed)  /*runs spesific function in the spesicif time which is passed by paramater*/
-
 }
 
+function writeText2() {
+    visah1.innerText = headingg.slice(0, idx)
+    idx++
+    if(idx > headingg.length) { //condition to check if function exceeds the indecx number
+        idx = 1
+    }
+    setTimeout(writeText2, speed)  /*runs spesific function in the spesicif time which is passed by paramater*/
+}
 /*Auto heading ends*/ 
 /** Nav Bar in mobile device */
 function hmopennav() {

@@ -18,6 +18,7 @@
      color: #222;
      padding-bottom: 10px !important;
      overflow-x: hidden;
+     z-index: 5;
  }
  
  .hm-container {
@@ -26,20 +27,20 @@
  }
  
  .hm-nav {
-     position: fixed !important;
+     position: fixed;
      background-color: #222;
-     top: 0 !important;
-     left: 0 !important;
-     right: 0 !important;
+     top: 0;
+     left: 0 ;
+     right: 0;
      transition: all 0.3s ease-in-out;
  }
  
  .hm-nav .hm-container {
      display: flex ;
-     justify-content: space-between !important; /*to give space for each item*/
-     align-items: center !important;
-     padding: 20px 0 !important; /*avoid boostrap apply*/
-     transition: all 0.3s ease-in-out !important; /*when scrolling it will give nice ease transation effect*/
+     justify-content: space-between; /*to give space for each item*/
+     align-items: center;
+     padding: 20px 0; /*avoid boostrap apply*/
+     transition: all 0.3s ease-in-out; /*when scrolling it will give nice ease transation effect*/
  }
  
  .hm-nav .hm-ul {
@@ -183,27 +184,13 @@
     }
 }
 
- .hm-hero .hm-p {
-     font-size: 20px;
-     letter-spacing: 1px;
- }
- 
-.main-content .hm-h2,
- .main-content .hm-h3 {
-     font-size: 150%;
-     margin: 20px 0;
- }
- 
- .main-content .hm-p {
-     color: #555;
-     line-height: 30px;
-     letter-spacing: 1.2px;
- }
 
  /*------Visa Requirements----------------*/
  .visa-body{
-    background-image: url(img/visareq.webp);  
+  background-color: #AFEEEE;
+    background-image: url('https://images.unsplash.com/photo-1581656702382-9ae90e68e7b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=981&q=80');  
     height: 100vh;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -217,47 +204,101 @@
     margin-bottom: 20px;
     z-index: -2;
     overflow-y: hidden;
- }
-
- .list-group li {
-    color: black;
+    overflow-x: hidden;
     font-family: 'Mada', sans-serif;
-    display: absolute;
-    background-color: rgba(230, 220, 220, 0.3) !important;
- }
-
- ul.list-group {
-    list-style-type: square !important;
- }
-
- .bootstrap-iso .list-group{
-    padding: 0px 50px;
-    background-color: transparent;
  }
 
  .visa-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+  content: '';
+  position: fixed;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.visa-h1 {
+  margin-top: 20px;
+  display: relative;
+}
+
+.visa-p{
+  color: #000;
+  
+}
+.visa-palet {
+  display: flex;
+  height: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.visa-box {
+  border-radius: 10px;
+  margin-top: 10%;
+}
+
+.visa-box.box1, .visa-box.box2, .visa-box.box3 {
+  height: auto;
+  margin: 25px;
+
+  background-color: rgba(191, 191, 191, 0.895);
+  opacity: 0.9;
+  padding: 16px;
+}
+
+.visa-box.box4, .visa-box.box5 {
+  height: auto;
+  width: 40%;
+  margin: 25px;
+  background-color: rgba(191, 191, 191, 0.895);
+  padding: 28px;
+}
+
+.visa-content{
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding: 5%;
+  max-height: 1200px;
+}
+
+.box1 {
+  order: 1;
+}
+.box2 {
+  order: 2;
+}
+.box3 {
+  order: 3;
+}
+.box4 {
+  order: 4;
+}
+.box5 {
+  order: 6;
+}
+.box6 {
+  order: 5;
+}
+
+.visa-p {
+  display: relative;
 }
 
 .visa-button {
-    background-color: #c0392b !important;
-    color: #fff !important;
-    border: 1px #0392 !important;
-    font-size: 14px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 2px !important;
-    padding: 20px 30px !important;
-    overflow: hidden !important;
-    margin: 10px 15px !important;
-    position: flex !important;
-    border-radius: 25px !important;
+    background-color: #c0392b ;
+    color: #fff ;
+    border: 1px #0392;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    margin: 10px 10px;
+    border-radius: 75px;
 }
 
 .visa-button:focus {
@@ -265,44 +306,31 @@
 }
 
 .visa-button:hover {
-    background-color: #fff !important;
-    color: #000 !important;
-    transition: 0.3 ease-in-out !important;
-    /* color: #000 !important; */
-    /*opacity: 0.5 !important;*/
+    background-color: #fff;
+    color: #000;
+    transition: 0.3 ease-in-out;
+    opacity: 0.5 !important;
     
-}
+} 
 
+@media (max-width: 1340px) {
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+    order: initial;
+    flex-shrink: 1;
+  }
 
-.visa-container{
+  .visa-content{
+    overflow-y: scroll;
+  }
+
+  .visa-palet {
     display: flex;
+    flex-direction: column;
+  }
+
 }
 
-.visa-container .visa-column {
-    width: 500px;
-    margin: 10px;
-    border: 3px;
-    z-index: 4;
-}
 
-.visa-column2 {
-    align-self: center;
-}
-
-@media screen and (max-width: 920px) {
-    .visa-container .visa-column{
-        display: none;
-    }
-}
-
-.visa-column{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    width: 100vh;
-    filter: blur(0px);
-}
 
 
  /*-----------------------------------------------------------------------Emre CSS ends---------------------------------------------------------------------------------*/
