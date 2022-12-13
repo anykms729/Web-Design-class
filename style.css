@@ -690,11 +690,15 @@
   }
 }
 
+#employment .main-box-text {
+  height: 60%;
+}
+
 /* Set font style and animation of slide box number */
 #employment .main-box__order {
   /* Set font color, font size of slide box number */
   color: whitesmoke;
-  font-size: 32px;
+  font-size: 48px;
   /* Set upperside margin of slide box number */
   margin-top: 30px;
   /* Apply orderAnimation effect to slide box number infinitely */
@@ -706,18 +710,26 @@
   /* Set margin of title */
   margin: 10px 0px 20px 0px;
   /* Set font size of title */
-  font-size: 24px;
+  font-size: 32px;
   /* Set alignment of title */
   text-align: center;
 }
 
 /* Set position and font style of slide box contents */
-#employment .main-box-text .main-box__p {
+#employment .main-box-text .main-box__ol {
   /* Set margin of contents */
-  margin: 10px 0px 20px 0px;
+  margin: 10px 0px 20px 70px;
   /* Set font style of contents */
-  font-size: 18px;
+  font-size: 24px;
 }
+
+#employment .main-box-text .main-box__ol li {
+  padding: 5px 0px 5px 5px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid lightpink;
+}
+
+
 
 #employment .slide_button {
   /* Set layout and size of slide button */
@@ -787,41 +799,46 @@
     margin-top: 60px;
   }
 
-  #eligibility-requirement .main-box-text .main-box__p {
-    /* Decrease font size of contents */
-    font-size: 14px;
-  }
+#eligibility-requirement .main-box-text .main-box__p {
+  /* Decrease font size of contents */
+  font-size: 14px;
+}
 
-  #eligibility-requirement .main-box-text .main-box__h2 {
-    /* Decrease font size of title */
-    font-size: 20px;
-  }
+#eligibility-requirement .main-box-text .main-box__h2 {
+  /* Decrease font size of title */
+  font-size: 20px;
+}
 
-  #eligibility-requirement .link-btn{
-    /* Decrease size and font size of button */
-    width: 100px;
-    font-size: 14px;
-  }
+#eligibility-requirement .link-btn{
+  /* Decrease size and font size of button */
+  width: 100px;
+  font-size: 14px;
+}
 
-  #employment .main-box__order {
-    /* Decrease font size of slide number */
-    font-size: 24px;
-  }
+#employment .main-box__order {
+  /* Decrease font size of slide number */
+  font-size: 24px;
+}
 
-  #employment .main-box-text .main-box__h2 {
-    /* Decrease font size of title */
-    font-size: 18px;
-  }
+#employment .main-box-text .main-box__h2 {
+  /* Decrease font size of title */
+  font-size: 18px;
+}
 
-  #employment .main-box-text .main-box__p {
-    /* Decrease font size of contents */
-    font-size: 14px;
-  }
+#employment .main-box-text .main-box__ol {
+  /* Decrease font size of contents */
+  font-size: 14px;
+  /* Decrease left side margin of contents */
+  margin-left: 20px;
+  height: 100%;
+}
 
-  #employment .slide_pagination {
-    /* Hide pagination on the mobile size screen */
-    visibility: hidden;
-  }
+
+
+#employment .slide_pagination {
+  /* Hide pagination on the mobile size screen */
+  visibility: hidden;
+}
 
 }
 
