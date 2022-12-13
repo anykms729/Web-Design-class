@@ -897,12 +897,12 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
     background: url(img/contact-us.jpg);
     background-size: cover;
 }
-#about-us .contact-para h2{
+#contact-us .contact-para h2{
     text-align: center;
     color: black;
     font-weight: bold;
 }
-#about-us .contact-para{
+#contact-us .contact-para{
     text-align: center;
     padding: 3px;
     color: #fff;
