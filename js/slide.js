@@ -1,4 +1,8 @@
 /*Slide effect in the employment page*/
+/*=======================================
+I used the below website to create slide effect.
+개발자 데비너스의 개발일지. (2022). Vanilla JavaScript Slider 자바스크립트 슬라이드 페이지네이션(pagination) 구현. [online] Available at: https://devinus.tistory.com/45 [Accessed 14 Dec. 2022].
+========================================= */
 
 // Claculte the width of slide
 const slide = document.querySelector(".slide");
