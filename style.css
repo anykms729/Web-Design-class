@@ -351,6 +351,13 @@
   height: 100%;
 }
 
+.card:hover {
+  opacity: 0.4;
+   transform: scale(1.05);
+ }
+
+
+
 .card-wrapper {
   margin-top: 200px;
 }
