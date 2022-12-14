@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+/*=====================================
+  Set CSS style for navigation bar
+======================================*/
+
 .hm-body {
   font-family: 'Mada', sans-serif !important;
   color: #222;
@@ -83,7 +87,11 @@
   display: none;
 }
 
+/*=====================================
+  Set CSS style for main contents
+======================================*/
 
+/* Set background and element of body */
 .visa-body {
   background-image: url(img/kyugnjin-visa-bg.jpg);
   background-repeat: no-repeat;
@@ -100,6 +108,7 @@
   font-family: 'Mada', sans-serif;
 }
 
+/* Set bacground and size of body */
 .visa-body::before {
   content: '';
   position: fixed;
@@ -187,6 +196,7 @@
     text 5s steps(18) alternate infinite;
 }
 
+/* Set upperside margin of text box */
 .visa-palet {
   margin-top: 15px;
 }
@@ -201,12 +211,14 @@
   border-left: 5px solid tomato ;
 }
 
+/* Remove left side border of button box */
 .visa-box:last-child {
   border: none;
 }
 
+/* Set bottom side margin of text area */
 .visa-box:nth-child(5) {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* Set font size and alignment of contents */
@@ -219,8 +231,9 @@
   line-height: 150%;
 }
 
+/* Set font size of first letter bigger */
 p.visa-p:first-letter {
-  font-size: 22px;
+  font-size: 25px;
 }
 
 
@@ -299,8 +312,6 @@ p.visa-p:first-letter {
 
 
 
-
-
 /* When the screen is less than 920 pixels wide, hide all links, except for the first one ("logo"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 920px) {
   ul li:not(:last-child) {
@@ -341,13 +352,18 @@ p.visa-p:first-letter {
   }
   .visa-content {
     /* Increase height and margin-top considering main-box width and nav-bar width */
-    height: 70%;
+    height: 75%;
     margin-top: 60px;
   }
 
   .visa-p {
     /* Decrease font size of contents */
     font-size: 14px;
+  }
+  
+  p.visa-p:first-letter {
+    /* Decrease font size of first letter */
+    font-size: 20px;
   }
 
   .visa-h1 {
