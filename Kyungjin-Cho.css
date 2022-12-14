@@ -159,14 +159,14 @@
 }
 
 /* Create cursor effect for main box title */
-@keyframes cursor {
+@keyframes cursorAnimation {
   0%, 100% { 
     /* Set border-color(cursor) */
     border-color: whitesmoke; 
   }
 }
 
-@keyframes text {
+@keyframes typeAnimation {
   0% { 
     /* Set width of text area(invisible) */
     width: 0; 
@@ -192,8 +192,8 @@
   /* Set right side border of title(for animation effect) */
   border-right: 3px solid whitesmoke;
   /* Apply cursor effect to title infinitely */
-  animation: cursor 1s step-start infinite, 
-    text 5s steps(18) alternate infinite;
+  animation: cursorAnimation 1s step-start infinite, 
+  typeAnimation 5s steps(19) alternate infinite;
 }
 
 /* Set upperside margin of text box */
