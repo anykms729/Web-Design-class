@@ -558,6 +558,11 @@
   color: inherit;
 }
 
+/*=================================================================
+I used the below website to create hover effect.
+nanati.me. (2016). css 버튼 디자인 모음 │ NANATI’s STORY. [online] Available at: https://nanati.me/css-button-design/ [Accessed 14 Dec. 2022].
+====================================================================*/
+
 /* Set position and size of link button */
 #eligibility-requirement .link-btn{
   /* Set background, size and display of link button */
