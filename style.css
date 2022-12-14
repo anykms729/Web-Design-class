@@ -575,6 +575,10 @@ nanati.me. (2016). css 버튼 디자인 모음 │ NANATI’s STORY. [online] Av
   width: 300px;
   padding:0 5px;
   outline:none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Set font color, font size of link button */
   color:whitesmoke;
   font-size:20px;
