@@ -75,6 +75,7 @@
     display: none;
 }
 
+/*adding style to contact us page */
 .visa-body {
     position: relative;
     min-height: 100vh;
@@ -98,24 +99,20 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
-/*
-h1{
-    display: flex;
-    height: 88%;
-    align-items: center;
-}
- */
+
 .visa-content {
     padding-top: 40px;
 }
-
+/* Set size and position of title */
 .visa-body h1{
     text-align: center;
     color: white;
 }
+/* Set color of characters */
 .visa-body p {
     color: white;
 }
+/* Set format for the button*/
 .visa-body button{
     width: 180px;
     color: #000;
@@ -128,7 +125,7 @@ h1{
     text-decoration: none;
     margin-top: 30px;
 }
-
+/* Set format for the first four boxes*/
 .box1,.box2,.box3,.box4 {
     width: 200px;
     height: 230px;
@@ -145,6 +142,7 @@ h1{
 .box5 {
     padding-top: 60px;
 }
+/* hover was used on these four boxes*/
 .box1:hover {
     transform: translateY(-10px);
 }
@@ -157,7 +155,6 @@ h1{
 .box4:hover {
     transform: translateY(-10px);
 }
-
 
 
 /* When the screen is less than 920 pixels wide, hide all links, except for the first one ("logo"). Show the link that contains should open and close the topnav (.icon) */
