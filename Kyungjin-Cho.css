@@ -148,6 +148,11 @@
   width: 80%;
   height: 70%;
   padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   /* Set position of text inside text box */
   text-align: center;
   /* Set font color as white */
@@ -159,14 +164,14 @@
 }
 
 /* Create cursor effect for main box title */
-@keyframes cursor {
+@keyframes cursorAnimation {
   0%, 100% { 
     /* Set border-color(cursor) */
     border-color: whitesmoke; 
   }
 }
 
-@keyframes text {
+@keyframes typeAnimation {
   0% { 
     /* Set width of text area(invisible) */
     width: 0; 
@@ -192,8 +197,8 @@
   /* Set right side border of title(for animation effect) */
   border-right: 3px solid whitesmoke;
   /* Apply cursor effect to title infinitely */
-  animation: cursor 1s step-start infinite, 
-    text 5s steps(18) alternate infinite;
+  animation: cursorAnimation 1s step-start infinite, 
+  typeAnimation 5s steps(19) alternate infinite;
 }
 
 /* Set upperside margin of text box */
@@ -208,12 +213,18 @@
   margin-left: auto;
   margin-bottom: 15px;
   padding-left: 10px;
-  border-left: 5px solid tomato ;
+  border-left: 5px solid tomato;
 }
 
-/* Remove left side border of button box */
+
 .visa-box:last-child {
+  /* Remove left side border of button box */
   border: none;
+  /* Set position of button box */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Set bottom side margin of text area */
@@ -256,6 +267,10 @@ p.visa-p:first-letter {
   width: 300px;
   padding:0 5px;
   outline:none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Set font color, font size of link button */
   color:whitesmoke;
   font-size:20px;

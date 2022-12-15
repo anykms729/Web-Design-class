@@ -448,8 +448,9 @@
   align-items: center;
   text-align: center;
   position: relative;
-  /* Set font color of eligibility-requirement page */
+  /* Set font color and family of employment page */
   color: whitesmoke;
+  font-family: 'Mada', sans-serif !important;
 }
 
 /* Create fadeIn effect for eligibility-requirement page and employment page */
@@ -497,21 +498,21 @@
 }
 
 /* Create cursor effect for main box title */
-@keyframes cursor {
+@keyframes cursorAnimation {
   0%, 100% { 
     /* Set border-color(cursor) */
     border-color: whitesmoke; 
   }
 }
 
-@keyframes text {
+@keyframes typeAnimation {
   0% { 
     /* Set width of text area(invisible) */
     width: 0; 
   }
   100% { 
     /* Set width of text area(visible) */
-    width: 20ch; 
+    width: 22ch; 
     /* Set font color of text area */
     color: tomato;
   }
@@ -521,7 +522,7 @@
 #eligibility-requirement .main-box-text .main-box__h2 {
   /* Set position and size of title */
   margin: 10px 0px 20px 0px;
-  width: 20ch;
+  width: 22ch;
   /* Prevent line-break */
   display: inline-block;
   white-space: nowrap;
@@ -530,8 +531,8 @@
   /* Set right side border of title(for animation effect) */
   border-right: 3px solid whitesmoke;
   /* Apply cursor effect to title infinitely */
-  animation: cursor 1s step-start infinite, 
-    text 5s steps(18) alternate infinite;
+  animation: cursorAnimation 1s step-start infinite, 
+    typeAnimation 5s steps(19) alternate infinite;
 }
 
 /* Set font size and alignment of contents */
@@ -574,6 +575,10 @@ nanati.me. (2016). css 버튼 디자인 모음 │ NANATI’s STORY. [online] Av
   width: 300px;
   padding:0 5px;
   outline:none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Set font color, font size of link button */
   color:whitesmoke;
   font-size:20px;
@@ -641,8 +646,9 @@ nanati.me. (2016). css 버튼 디자인 모음 │ NANATI’s STORY. [online] Av
   align-items: center;
   text-align: center;
   position: relative;
-  /* Set font color or employment page */
+  /* Set font color and family of employment page */
   color: whitesmoke;
+  font-family: 'Mada', sans-serif !important;
 }
 
 /* Set upperside margin of slide box */
