@@ -1,5 +1,3 @@
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
- @import url('https://fonts.googleapis.com/css2?family=Mada&display=swap');
 
  * {
    box-sizing: border-box;
@@ -175,7 +173,7 @@
    /*seperating them to each other*/
    position: relative;
    /**/
-   transform: flex 0.7 ease-in;
+   /* transform: flex 0.7 ease-in; */
  }
 
  .hm-panel.active {
@@ -191,7 +189,7 @@
    .hm-panel:nth-of-type(5) {
      display: none;
      /*when the screen small it wont display 4th nd 5th*/
-     transition: all 0.3 ease-in-out;
+     /* transition: all 0.3 ease-in-out; */
    }
  }
 
@@ -280,7 +278,6 @@
 
  .visa-button {
    background-color: black;
-   color: black;
    font-size: large;
    padding: 20px 30px;
    margin-bottom: 200px;
